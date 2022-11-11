@@ -43,6 +43,7 @@ describe("Quiz 14 API Automation", function () {
         expect(response.body.code).to.eql(0)
         expect(response.body.data.Name).to.eql(name)
         expect(response.body.data.Email).to.eql(email)
+        expect(response.body.data.Token).to.not.eql(null)
 
         token = response.body.data.Token
     })
